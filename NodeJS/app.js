@@ -6,7 +6,7 @@ const server = http.createServer(async (req, res) => {
         //response headers
         res.writeHead(200, { "Content-Type": "application/json" });
         //set the response
-        res.write("{ test: \"success\"}");
+        res.write("{ \"test\": \"success\" }");
         //end the response
         res.end();
     }
